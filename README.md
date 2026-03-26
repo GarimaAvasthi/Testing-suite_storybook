@@ -3,7 +3,8 @@
 A high-fidelity, interactive Next.js application designed to showcase enterprise-level **Automated Testing** methodologies using **Jest** and **React Testing Library**.
 
 ## Link to vercel 
-  
+
+ " https://testing-suite-delta.vercel.app/"
 
 ## ✨ Features
 - Comprehensive Unit & Integration Testing setup.
@@ -12,11 +13,11 @@ A high-fidelity, interactive Next.js application designed to showcase enterprise
 - Styled elegantly with Tailwind CSS v4.
 - API Mocking capabilities for offline and robust testing.
 
-## 🛠 Tech Stack
-- **Framework:**
-- **Styling:** 
-- **Testing:** 
-- **Language:**
+## Tech Stack
+- Next.js 16
+- Tailwind CSS v4
+- Jest + React Testing Library
+- TypeScript + React 19
 
 ## 🚀 Getting Started
 
