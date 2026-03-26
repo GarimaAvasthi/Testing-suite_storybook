@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Testing Suite 🧪
 
-## Getting Started
+A high-fidelity, interactive Next.js application designed to showcase enterprise-level **Automated Testing** methodologies using **Jest** and **React Testing Library**.
 
-First, run the development server:
+## Link to vercel 
+  
 
+## ✨ Features
+- Comprehensive Unit & Integration Testing setup.
+- 100% Code Coverage across components.
+- Modern React 19 & Next.js 16 architecture.
+- Styled elegantly with Tailwind CSS v4.
+- API Mocking capabilities for offline and robust testing.
+
+## 🛠 Tech Stack
+- **Framework:**
+- **Styling:** 
+- **Testing:** 
+- **Language:**
+
+## 🚀 Getting Started
+
+### Prerequisites
+    install Node.js (v20+) 
+
+### Installation
+1. Clone the repository.
+   ```bash
+   git clone 
+   ```
+2. Install the dependencies.
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+To start the development server, run:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Then, open [http://localhost:3000]in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Test Suite
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run test:coverage
+```
+*Note: Tests run in-band (`--runInBand`) by default to prevent worker spawn issues on certain environments (e.g., Windows).*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗 Testing Architecture
+This project demonstrates various testing methodologies and scenarios:
 
-## Learn More
+- **Static Rendering:** Ensures components render without crashing based on specific props. 
+- **Interaction Testing:** Validates internal React state changes triggered by user interactions using `@testing-library/user-event`. 
+- **Mock APIs:** Simulates HTTP requests to test data fetching components without relying on live endpoints, utilizing `jest.fn()`. 
+  
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 APIs Used
+- [JSONPlaceholder Users API](https://jsonplaceholder.typicode.com/users) - For mock user data.
+- [DiceBear Avatars API](https://api.dicebear.com/9.x/avataaars/svg) - For generating dynamic user avatars.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ using Next.js, Tailwind CSS, Jest, and React Testing Library.*
