@@ -2,6 +2,10 @@
 
 A high-fidelity, interactive Next.js app that doubles as a component design system. It showcases premium UI components (Button, Input, Card), documents them in Storybook, and includes a full automated testing setup with Jest + React Testing Library.
 
+# Application links
+https://testing-suite-delta.vercel.app/
+https://storybook-static-mauve-seven.vercel.app/?path=/story/components-button--playground
+
 ## What the app does
 - **Landing / Playground**: A single-page UI that previews components in a tabbed playground.
 - **Design System**: Components are built as reusable, typed React components.
