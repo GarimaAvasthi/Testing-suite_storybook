@@ -11,7 +11,7 @@ const HomePage = () => {
   const [statusBump, setStatusBump] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   
-  const storybookUrl = process.env.NEXT_PUBLIC_STORYBOOK_URL;
+  const storybookUrl = process.env.NEXT_PUBLIC_STORYBOOK_URL || 'https://storybook-static-mauve-seven.vercel.app';
   const hasStorybook = Boolean(storybookUrl);
 
   useEffect(() => {
@@ -49,23 +49,9 @@ const HomePage = () => {
     return () => clearTimeout(t);
   }, [status]);
 
-  const jumpTo = (hash: string, label: string) => {
-    handleDemoAction(label);
-    const id = hash.startsWith('#') ? hash.slice(1) : hash;
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      window.location.hash = `#${id}`;
-    }
-  };
 
-  const openTabAndJump = (tab: 'buttons' | 'inputs' | 'cards', label: string) => {
-    setActiveTab(tab);
-    setTimeout(() => {
-      jumpTo('#playground', label);
-    }, 0);
-  };
+
+
 
   const tabs = [
     { id: 'buttons' as const, label: 'Buttons', count: 6 },
